@@ -350,6 +350,10 @@ img{
     justify-content: space-between;
     align-items: center;
     gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .testimony__img{
@@ -367,4 +371,17 @@ img{
 .testimony__arrow{
     width: 40%;
     cursor: pointer;
+}
+
+.testimony__course{
+    background-color: royalblue;
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+}
+
+.testimony__body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
 }
