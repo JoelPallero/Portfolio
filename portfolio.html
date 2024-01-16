@@ -17,9 +17,9 @@
 </head>
 
 <body>
-    <header class="hero2">
+    <header class="hero-calculator">
         <nav class="nav container">
-            <div class="nav__logo">                
+            <div class="nav__logo">
                 <h2 class="nav__title">
                     <a href="/" class="logo">
                         <img src="/img/logo-tipo-small.png" alt="" class="logo__img">
@@ -29,16 +29,13 @@
             </div>
             <ul class="nav__link nav__link--menu">
                 <li class="nav__items">
-                    <a href="/index.html" class="nav__links">inicio</a>
-                </li>
-                <li class="nav__items">
-                    <a href="" class="nav__links">acerca de</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#contacto" class="nav__links">contacto</a>
+                    <a href="/index.html" class="nav__links">home</a>
                 </li>
                 <li class="nav__items">
                     <a href="/portfolio.html" class="nav__links">Portfolio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#contacto" class="nav__links">contact</a>
                 </li>
 
                 <img src="/img/icons/close.svg" alt="close" class="nav__close">
@@ -48,46 +45,42 @@
                 <img src="/img/icons/menu.svg" alt="menu">
             </div>
         </nav>
-        <section class="hero__container container">
-            <h1 class="hero__title">
-                Diseños inteligentes para tu sitio web
-            </h1>
-            <p class="hero__paragraph">Actualizamos o creamos tu página web, con nuestros diseños innovadores. Tenemos un equipo que trabaja en torno a las novedades de estilos y, al mismo tiempo, en tus necesidades</p>
-            <a href="#" class="cta">contactanos</a>
-        </section>
+
     </header>
 
-    <main class="main--opacity">
-        <section class="container about">
+    <main id="id-portfolio">
+
+        <!-- Ejercicios practicos con js -->
+
+        <section class="price container">
             <h2 class="subtitle">Portfolio</h2>
-            <p class="about__paragraph">Juegos, y ejercicios hechos en javascript</p>
-            <div class="about__main">
+            <p class="about__paragraph about__paragraph--portfolio">Diseños web hechos en wordpress | Juegos y
+                ejercicios hechos con Javascript</p>
 
-                <article class="about__icons">
-                    <img src="/img/icons/calculator.svg" alt="design" class="about__icon">
-                        <h3 class="about__title">Calculadora cientifica</h3>
-                        <p class="about__paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique vero enim aspernatur?
-                        </p>
-                </article>
-                
-                <article class="about__icons">
-                    <img src="/img/icons/code.svg" alt="shield" class="about__icon">
-                    <h3 class="about__title">Muestras Web</h3>
-                    <p class="about__paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique vero enim aspernatur?
-                    </p>
-                </article>
+            <div class="price__table">
+                <div class="price__element price__element--portfolio">
+                    <img src="/img/icons/wordpress.svg" alt="" class="client__icon">
+                    <div class="price__items">
+                        <p class="price__features">Regular Clients</p>
+                    </div>
+                    <a href="#" class="price__cta">See More</a>
+                </div>
 
-                
-                <article class="about__icons">
-                    <img src="/img/icons/colors.svg" alt="code" class="about__icon">
-                    <h3 class="about__title">diseños inteligentes</h3>
-                    <p class="about__paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique vero enim aspernatur?
-                    </p>
-                </article>
+                <div class="price__element price__element--portfolio">
+                    <img src="/img/icons/javascript.svg" alt="" class="client__icon">
+                    <div class="price__items">
+                        <p class="price__features">Practicos JS</p>
+                    </div>
+                    <a href="#" class="price__cta">See More</a>
+                </div>
 
+                <div class="price__element price__element--portfolio">
+                    <img src="/img/icons/wordpress.svg" alt="" class="client__icon">
+                    <div class="price__items">
+                        <p class="price__features">Clientes regulares</p>
+                    </div>
+                    <a href="#" class="price__cta">See More</a>
+                </div>
             </div>
         </section>
 
@@ -101,153 +94,23 @@
                         </p>
                         <p class="knowledge__paragraph">
                             contacto@joelpallero.com.ar
-                        </p>                        
+                        </p>
                     </div>
                     <a href="#" class="cta2">Contactanos</a>
                 </div>
             </div>
         </section>
 
-        <section class="price container">
-            <h2 class="subtitle"></h2>
-            <div class="price__table">
-                <div class="price__element">
-                    <p class="price__name">Animaciones</p>
-                    <h3 class="price__price">$40/mes</h3>
-                    <div class="price__items">
-                        <p class="price__features">Diseños Responsivos</p>
-                        <p class="price__features">Grid</p>
-                        <p class="price__features">Flexbox</p>
-                    </div>
-                    <a href="#" class="price__cta">Contactanos ahora</a>
-                </div>
-
-                <div class="price__element price__element--best">
-                    <p class="price__name">Animaciones</p>
-                    <h3 class="price__price">$40/mes</h3>
-                    <div class="price__items">
-                        <p class="price__features">Diseños Responsivos</p>
-                        <p class="price__features">Grid</p>
-                        <p class="price__features">Flexbox</p>
-                    </div>
-                    <a href="#" class="price__cta">Contactanos ahora</a>
-                </div>
-
-                <div class="price__element">
-                    <p class="price__name">Animaciones</p>
-                    <h3 class="price__price">$40/mes</h3>
-                    <div class="price__items">
-                        <p class="price__features">Diseños Responsivos</p>
-                        <p class="price__features">Grid</p>
-                        <p class="price__features">Flexbox</p>
-                    </div>
-                    <a href="#" class="price__cta">Contactanos ahora</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Slider -->
-        <section class="testimony">
-            <div class="testimony__container container">
-                <img src="/img/icons/leftarrow.svg" alt="" class="testimony__arrow" id="before">
-
-                <section class="testimony__body testimony__body--show" data-id="1">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">
-                            Mi nombre es Joel Pallero,
-                            <span class="testimony__course"> soy desarrollador de software.</span>
-                        </h2>                        
-                        <p class="testimony__review">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quaerat magnam ea libero facilis deserunt error eveniet explicabo rem sapiente provident quas, natus iste excepturi, quo at. Nihil, voluptatem cum?
-                        </p>
-                    </div>
-                    <figure class="testimony__picture">
-                        <img src="/img/slider3.png" alt="" class="testimony__img">
-                    </figure>
-                </section>
-
-                <section class="testimony__body" data-id="2">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">
-                            Soy Mateo Bagardo,
-                            <span class="testimony__course">soy desarrollador de FullStack.</span>
-                        </h2>
-                        <p class="testimony__review">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quaerat magnam ea libero facilis deserunt error eveniet explicabo rem sapiente provident quas.
-                        </p>
-                    </div>
-                    <figure class="testimony__picture">
-                        <img src="/img/slider3.png" alt="" class="testimony__img">
-                    </figure>
-                </section>
-
-                <section class="testimony__body" data-id="3">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">
-                            Me llamo Tato Avendaño,
-                            <span class="testimony__course">soy desarrollador Backend.</span>
-                        </h2>
-                        <p class="testimony__review">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quaerat magnam ea libero facilis deserunt error eveniet explicabo rem sapiente provident quas, natus iste excepturi, quo at. Nihil, voluptatem cum?
-                        </p>
-                    </div>
-                    <figure class="testimony__picture">
-                        <img src="/img/slider3.png" alt="" class="testimony__img">
-                    </figure>
-                </section>
-
-                <img src="/img/icons/rightarrow.svg" alt="" class="testimony__arrow" id="next">
-            </div>
-        </section>
-
-        <!-- fquestions -->
-
-        <section class="questions container">
-            <h2 class="subtitle">Preguntas Frecuentes</h2>
-            <p class="questions__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, maiores!</p>
-            <section class="questions__container">
-                <article class="questions__padding" dataset="1">
-                    <div class="questions__answers">
-                        <h3 class="questions__title">¿Qué es CSS?
-                            <span class="questions__arrow"><img src="/img/icons/chevron-dn.svg" alt="" class="questions__img"></span>
-                        </h3>
-                        <p class="questions__show">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur numquam delectus tempora facilis nesciunt! Repellendus est ea deleniti libero neque animi fuga, vel eveniet facere iste ratione, ipsa aliquid provident!
-                        </p>
-                    </div>
-                </article>
-
-                <article class="questions__padding" dataset="2">
-                    <div class="questions__answers">
-                        <h3 class="questions__title">¿Qué es CSS?
-                            <span class="questions__arrow"><img src="/img/icons/chevron-dn.svg" alt="" class="questions__img"></span>
-                        </h3>
-                        <p class="questions__show">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur numquam delectus tempora facilis nesciunt! Repellendus est ea deleniti libero neque animi fuga, vel eveniet facere iste ratione, ipsa aliquid provident!
-                        </p>
-                    </div>
-                </article>
-
-                <article class="questions__padding" dataset="3">
-                    <div class="questions__answers">
-                        <h3 class="questions__title">¿Qué es CSS?
-                            <span class="questions__arrow"><img src="/img/icons/chevron-dn.svg" alt="" class="questions__img"></span>
-                        </h3>
-                        <p class="questions__show">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur numquam delectus tempora facilis nesciunt! Repellendus est ea deleniti libero neque animi fuga, vel eveniet facere iste ratione, ipsa aliquid provident!
-                        </p>
-                    </div>
-                </article>
-            </section>
-        </section>
     </main>
 
     <footer class="footer">
         <section class="footer__container container">
+
+            <section class="logotipo">
+                <img src="/img/logo-tipo-small.png" alt="">
+            </section>
+
             <nav class="nav nav--footer">
-                <h2 class="footer__title">
-                    <img src="/img/logo2.png" alt="">
-                </h2>
                 <ul class="nav__link nav__link--footer">
                     <li class="nav__items">
                         <a href="" class="nav__links">inicio</a>
@@ -263,14 +126,6 @@
                     </li>
                 </ul>
             </nav>
-
-            <form action="" class="footer__form" id="contacto">
-                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
-                <div class="footer__inputs">
-                    <input type="email" value="" placeholder="Email" class="footer__input">
-                    <input type="submit" value="Registrate" class="footer__submit">
-                </div>
-            </form>
         </section>
 
         <section class="footer__copy container">
