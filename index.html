@@ -17,49 +17,59 @@
 </head>
 
 <body>
-    <header class="hero">
-        <nav class="nav container">
-            <div class="nav__logo">                
-                <h2 class="nav__title">
-                    <a href="/" class="logo">
-                        <img src="/img/logo-tipo-small.png" alt="" class="logo__img">
-                    </a>
-                    Joal Pallero | Web Designs
-                </h2>
-            </div>
-            <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="/index.html" class="nav__links">home</a>
-                </li>
-                <li class="nav__items">
-                    <a href="/portfolio.html" class="nav__links">Portfolio</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#contacto" class="nav__links">contact</a>
-                </li>
-
-                <img src="/img/icons/close.svg" alt="close" class="nav__close">
-            </ul>
-
-            <div class="nav__menu">
-                <img src="/img/icons/menu.svg" alt="menu">
-            </div>
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <div class="nav__logo">                
+                    <h2 class="nav__title">
+                        <a href="/" class="logo">
+                            <img src="/img/logo-tipo-small.png" alt="" class="logo__img">
+                        </a>
+                        Joel Pallero
+                    </h2>
+                </div>
+                <ul class="nav__link nav__link--menu">
+                    <li class="nav__items">
+                        <a href="/index.html" class="nav__links">home</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="/portfolio.html" class="nav__links">Portfolio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#contacto" class="nav__links">contact</a>
+                    </li>
+    
+                    <img src="/img/icons/close.svg" alt="close" class="nav__close">
+                </ul>
+    
+                <div class="nav__menu">
+                    <img src="/img/icons/menu.svg" alt="menu">
+                </div>
+            </div>                
         </nav>
-        <section class="hero__container container">
-            <h1 class="hero__title">
-                Welcome to my Web Site
-            </h1>
-            <p class="hero__paragraph">Here, you will be able to know about me, and my work as a software engineer</p>
-            <a href="#curriculum" class="cta">See more</a>
-        </section>
     </header>
 
-    <main>
+    <main>        
+        <section class="hero__background">
+            <section class="background__bg">
+                <section class="hero__container">
+                    <h1 class="hero__title">
+                        Welcome to my Web Site
+                    </h1>
+                    <p class="hero__paragraph">Here, you will be able to know about me, and my work as a software engineer</p>
+                    <a href="#curriculum" class="cta">See more</a>
+                </section>
+            </section>
+            <section class="background_img">
+                <img src="/img/banner-main.png" alt="" class="bg__img">
+            </section>
+        </section>
 
         <section class="questions container" id="curriculum">
-            <h2 class="subtitle">Curriculum</h2>
+            <h2 class="subtitle">CV</h2>
             <img src="/img/profile.png" alt="" class="profile-photo">
-            <p class="questions__paragraph">Let's see a few things about myself</p>
+            <p class="questions__paragraph">Hi! I am Joel. <br>
+                                            I'm the designer and developer of this Web Site</p>
             <section class="questions__container">
                 <article class="questions__padding">
                     <div class="questions__answers">
@@ -68,13 +78,32 @@
                                     class="questions__img"></span>
                         </h3>
                         <p class="questions__show">
-                            Hi! I am Joel the web designer and developer of this CV-Portfolio Web Site, and I'm a software deveoper. I'm 31 years old and I come from Argentina.<br>
-                            I have a degree in software Development. I studied
-                            at the <a href="https://www.institutotecnicocordoba.com/" class="portfolio__link">Córdoba
-                                Higher Technical Institute.</a>
+                            I'm Joel Pallero, I'm 31 years old and I come from Argentina.<br>
+                            I'm a software deveoper. I studied
+                            programming at the <a href="https://www.institutotecnicocordoba.com/" class="portfolio__link">Córdoba
+                                Higher Technical Institute.</a> and I have a degree in software Development. 
                             Currently, I am developing web pages, and I am delving into programming languages ​​​​like
                             javascript. My goal is to master the language as much as possible to be excellent in
                             libraries like React.Js and Node.Js
+                        </p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answers">
+                        <h3 class="questions__title">Work Experience
+                            <span class="questions__arrow"><img src="/img/icons/chevron-dn.svg" alt=""
+                                    class="questions__img"></span>
+                        </h3>
+                        <p class="questions__show work">
+                            <span class="job__title">Wordpress Designer</span><br>
+                            I am currently working as a FreeLancer web designer on Wordpress.<button class="open__modal">Here</button>you will able to see some of my Work with regular clients that I have been able to work on during the year 2023.<br><br>
+                            <span class="job__title">Call Center Agent (Former Employee)</span><br>
+                            I worked for a period of 5 and a half years in a Call Center: <a href="https://www.v-n.com.ar/"
+                                class="portfolio__link">VN Global BPO</a>. My tasks were: Customer service through
+                            various means (such as telephone, via Mail, Chat, etc.), Refinancing of telephone debts,
+                            Credit limit for Corporate Clients, After-Sales Service in home internet installation, among
+                            others tasks.
                         </p>
                     </div>
                 </article>
@@ -87,12 +116,12 @@
                             </span>
                         </h3>
                         <div class="questions__show questions__show--tablets">
-                            <p class="lenguage__tablet">HTML</p>
-                            <p class="lenguage__tablet">CSS</p>
-                            <p class="lenguage__tablet">JS</p>
-                            <p class="lenguage__tablet">SQL</p>
-                            <p class="lenguage__tablet">C#</p>
-                            <p class="lenguage__tablet">GitHub</p>
+                            <p class="lenguage__tablet" title="Average advanced level">HTML</p>
+                            <p class="lenguage__tablet" title="Average advanced level">CSS</p>
+                            <p class="lenguage__tablet" title="Average advanced level">JS</p>
+                            <p class="lenguage__tablet" title="Average advanced level">SQL</p>
+                            <p class="lenguage__tablet" title="Basic programming">C#</p>
+                            <p class="lenguage__tablet" title="">GitHub</p>
                         </div>
                     </div>
                 </article>
@@ -104,35 +133,47 @@
                                     class="questions__img"></span>
                         </h3>
                         <div class="questions__show questions__show--tablets">
-                            <p class="lenguage__tablet">Spanish (Native)</p>
-                            <p class="lenguage__tablet">English</p>
-                            <p class="lenguage__tablet">Portuguese</p>
+                            <p class="lenguage__tablet" title="Native">Spanish (Native)</p>
+                            <p class="lenguage__tablet" title="Conversational Level">English</p>
+                            <p class="lenguage__tablet" title="Basic sentences - Average advance listening level">Portuguese</p>
                         </div>
                     </div>
                 </article>
 
-                <article class="questions__padding">
-                    <div class="questions__answers">
-                        <h3 class="questions__title">Work Experience
-                            <span class="questions__arrow"><img src="/img/icons/chevron-dn.svg" alt=""
-                                    class="questions__img"></span>
-                        </h3>
-                        <p class="questions__show work">
-                            <span class="job__title">Web Designer</span><br>
-                            I am currently working on web pages developed in wordpress. <a href="/clients.html"
-                                class="portfolio__link">Here</a> you will able to see some of my Work with regular clients that I have been able to work on during the year 2023.<br><br>
-                            <span class="job__title">Call Center Agent</span><br>
-                            I worked for a period of 5 and a half years in a Call Center: <a href="https://www.v-n.com.ar/"
-                                class="portfolio__link">VN Global BPO</a>. My tasks were: Customer service through
-                            various means (such as telephone, via Mail, Chat, etc.), Refinancing of telephone debts,
-                            Credit limit for Corporate Clients, After-Sales Service in home internet installation, among
-                            others tasks.
-                        </p>
-                    </div>
-                </article>
-
             </section>
-        </section>        
+        </section>  
+        
+        <section class="card container">
+            <h2 class="subtitle">Portfolio</h2>
+            <p class="about__paragraph about__paragraph--portfolio">Diseños web hechos en wordpress | Juegos y
+                ejercicios hechos con Javascript</p>
+
+            <div class="card__table">
+                <div class="card__element card__element--portfolio">
+                    <img src="/img/icons/wordpress.svg" alt="" class="client__icon">
+                    <div class="card__items">
+                        <p class="card__features">Regular Clients</p>
+                    </div>
+                    <a href="#" class="card__cta">See More</a>
+                </div>
+
+                <div class="card__element card__element--portfolio">
+                    <img src="/img/icons/javascript.svg" alt="" class="client__icon">
+                    <div class="card__items">
+                        <p class="card__features">Games and practical excercises</p>
+                    </div>
+                    <a href="#" class="card__cta">See More</a>
+                </div>
+
+                <div class="card__element card__element--portfolio">
+                    <img src="/img/icons/wordpress.svg" alt="" class="client__icon">
+                    <div class="card__items">
+                        <p class="card__features">Clientes regulares</p>
+                    </div>
+                    <a href="#" class="card__cta">See More</a>
+                </div>
+            </div>
+        </section>
 
         <section class="knowledge">
             <div class="knowledge__container">
@@ -153,6 +194,36 @@
         </section>
     </main>
 
+    <!-- Modal Clients -->
+    <dialog>
+        <form method="dialog">
+            <h3 class="questions__title">Some of my Clients</h3>
+            <section class="client__section">                 
+                <a href="https://fundacionesperanza.com.ar" class="client__link">
+                    <img src="/img/fundacion-esperanza.png" alt="" class="cliente__img">  
+                </a>
+            </section>
+            
+            <section class="client__section">                 
+                <a href="https://hacer.com.ar" class="client__link">
+                    <img src="/img/hacer.png" alt="" class="cliente__img">  
+                </a>
+            </section>
+
+            
+            <section class="client__section">                
+                <a href="https://maranathaargentina.com" class="client__link">
+                    <img src="/img/maranatha.png" alt="" class="cliente__img maranatha__img">   
+                </a>
+            </section>
+
+            <button type="submit">Close</button>
+        </form>
+    </dialog>
+
+
+
+
     <footer class="footer">
         <section class="footer__container container">
 
@@ -163,16 +234,13 @@
             <nav class="nav nav--footer">
                 <ul class="nav__link nav__link--footer">
                     <li class="nav__items">
-                        <a href="" class="nav__links">inicio</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="" class="nav__links">acerca de</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">contacto</a>
+                        <a href="" class="nav__links">home</a>
                     </li>
                     <li class="nav__items">
                         <a href="/portfolio.html" class="nav__links">Portfolio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">contact</a>
                     </li>
                 </ul>
             </nav>
@@ -195,9 +263,18 @@
     </footer>
 
 
+    <!-- Home Button -->
+    <div class="up__button">
+        <a href="#header" class="link__up-button">
+            <img src="/img/icons/chevron-up.svg" alt="" class="up__button--icon">
+        </a>
+    </div>
+
+
     <script src="/js/slider.js"></script>
     <script src="/js/acordeon.js"></script>
     <script src="/js/menu.js"></script>
+    <script src="/js/scroll-button.js"></script>
 </body>
 
 </html>
