@@ -12,64 +12,135 @@
     <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
 
 
-    <title>Portfolio</title>
+    <title>Home Page</title>
 
 </head>
 
 <body>
-    <header class="hero-calculator">
-        <nav class="nav container">
-            <div class="nav__logo">
-                <h2 class="nav__title">
-                    <a href="/" class="logo">
-                        <img src="/img/logo-tipo-small.png" alt="" class="logo__img">
-                    </a>
-                    Diseños Web
-                </h2>
-            </div>
-            <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="/index.html" class="nav__links">home</a>
-                </li>
-                <li class="nav__items">
-                    <a href="/portfolio.html" class="nav__links">Portfolio</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#contacto" class="nav__links">contact</a>
-                </li>
-
-                <img src="/img/icons/close.svg" alt="close" class="nav__close">
-            </ul>
-
-            <div class="nav__menu">
-                <img src="/img/icons/menu.svg" alt="menu">
-            </div>
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <div class="nav__logo">                
+                    <h2 class="nav__title">
+                        <a href="/" class="logo">
+                            <img src="/img/logo-tipo-small.png" alt="" class="logo__img">
+                        </a>
+                        Joel Pallero
+                    </h2>
+                </div>
+                <ul class="nav__link nav__link--menu">
+                    <li class="nav__items">
+                        <a href="/index.html" class="nav__links">home</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="/portfolio.html" class="nav__links">Portfolio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#contacto" class="nav__links">contact</a>
+                    </li>
+    
+                    <img src="/img/icons/close.svg" alt="close" class="nav__close">
+                </ul>
+    
+                <div class="nav__menu">
+                    <img src="/img/icons/menu.svg" alt="menu">
+                </div>
+            </div>                
         </nav>
-
     </header>
 
-    <main id="id-portfolio">
+    <main>
+        <section class="card container">
+            <h2 class="subtitle">Portfolio</h2>
+            <p class="about__paragraph about__paragraph--portfolio">Practice, and more stuff..</p>
 
-        <!-- Ejercicios practicos con js -->        
-
-        <section class="knowledge">
-            <div class="knowledge__container">
-                <div class="knowledge__texts">
-                    <h2 class="subtitle">Joel Pallero</h2>
-                    <div class="knowledge__contact">
-                        <p class="knowledge__paragraph">
-                            +54 351 2149461
-                        </p>
-                        <p class="knowledge__paragraph">
-                            contacto@joelpallero.com.ar
-                        </p>
+            <div class="card__table">
+                <div class="card__element card__element--portfolio sombreado">
+                    <img src="/img/icons/wordpress.svg" alt="" class="client__icon">
+                    <div class="card__items">
+                        <p class="card__features">Real work, where I made some development</p>
                     </div>
-                    <a href="#" class="cta2">Contactanos</a>
+                    <a href="/portfolio/clients.html" class="card__cta">See More</a>
                 </div>
+
+                
+                <div class="card__element card__element--portfolio sombreado">
+                    <img src="/img/icons/javascript.svg" alt="" class="client__icon">
+                    <div class="card__items">
+                        <p class="card__features">Tetris</p>
+                    </div>
+                    <a href="#" class="card__cta">See More</a>
+                </div>
+
+                
+                <div class="card__element card__element--portfolio sombreado">
+                    <img src="/img/icons/javascript.svg" alt="" class="client__icon">
+                    <div class="card__items">
+                        <p class="card__features">Calculator</p>
+                    </div>
+                    <a href="/portfolio/calculator.html" class="card__cta">See More</a>
+                </div>
+
+                
+                <div class="card__element card__element--portfolio sombreado">
+                    <img src="/img/icons/figma.svg" alt="" class="client__icon">
+                    <div class="card__items">
+                        <p class="card__features">Real work, where I made some development</p>
+                    </div>
+                    <a href="/portfolio/clients.html" class="card__cta">See More</a>
+                </div>
+
+                
+                <div class="card__element card__element--portfolio sombreado">
+                    <img src="/img/icons/wordpress.svg" alt="" class="client__icon">
+                    <div class="card__items">
+                        <p class="card__features">Real work, where I made some development</p>
+                    </div>
+                    <a href="/portfolio/clients.html" class="card__cta">See More</a>
+                </div>
+
+                
+                <div class="card__element card__element--portfolio sombreado">
+                    <img src="/img/icons/wordpress.svg" alt="" class="client__icon">
+                    <div class="card__items">
+                        <p class="card__features">Real work, where I made some development</p>
+                    </div>
+                    <a href="/portfolio/clients.html" class="card__cta">See More</a>
+                </div>
+                
             </div>
         </section>
-
     </main>
+
+    <!-- Modal Clients -->
+    <dialog>
+        <form method="dialog">
+            <h3 class="questions__title">Some of my Clients</h3>
+            <section class="client__section">                 
+                <a href="https://fundacionesperanza.com.ar" class="client__link">
+                    <img src="/img/fundacion-esperanza.png" alt="" class="cliente__img">  
+                </a>
+            </section>
+            
+            <section class="client__section">                 
+                <a href="https://hacer.com.ar" class="client__link">
+                    <img src="/img/hacer.png" alt="" class="cliente__img">  
+                </a>
+            </section>
+
+            
+            <section class="client__section">                
+                <a href="https://maranathaargentina.com" class="client__link">
+                    <img src="/img/maranatha.png" alt="" class="cliente__img maranatha__img">   
+                </a>
+            </section>
+
+            <button type="submit">Close</button>
+        </form>
+    </dialog>
+
+
+
 
     <footer class="footer">
         <section class="footer__container container">
@@ -81,16 +152,13 @@
             <nav class="nav nav--footer">
                 <ul class="nav__link nav__link--footer">
                     <li class="nav__items">
-                        <a href="" class="nav__links">inicio</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="" class="nav__links">acerca de</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">contacto</a>
+                        <a href="" class="nav__links">home</a>
                     </li>
                     <li class="nav__items">
                         <a href="/portfolio.html" class="nav__links">Portfolio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">contact</a>
                     </li>
                 </ul>
             </nav>
@@ -113,8 +181,19 @@
     </footer>
 
 
+    <!-- Home Button -->
+    <div class="up__button">
+        <a href="#header" class="link__up-button">
+            <img src="/img/icons/chevron-up.svg" alt="" class="up__button--icon">
+        </a>
+    </div>
+
+
+    <script src="/js/slider.js"></script>
     <script src="/js/acordeon.js"></script>
     <script src="/js/menu.js"></script>
+    <script src="/js/scroll-button.js"></script>
+    <script src="/js/portfolio-excercise/calculator.js"></script>
 </body>
 
 </html>

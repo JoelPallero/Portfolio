@@ -12,8 +12,6 @@
     --color-resultado:  #ffffff;
 
     --color-portfolio: rgb(231, 230, 230);
-
-
 }
 
 html{
@@ -28,6 +26,12 @@ body{
 ::-webkit-scrollbar{
     display: none;
     scrollbar-width: none;
+}
+
+.sombreado{
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 img{
@@ -361,6 +365,7 @@ img{
 .card{
     text-align: center;
     --padding-container: 0 0 50px 0;
+    margin-top: 50px;
 }
 
 .about__paragraph--portfolio{
@@ -904,8 +909,16 @@ img{
     color: var(--color-resultado);
 }
 
+.divider__section{
+    width: 40%;
+    height: 2px;
+    background-color: #000;
+    margin: 0 auto;
+}
+
 
 /* Up Button */
+
 .up__button{
     width: 50px;
     display: flex;
@@ -1025,9 +1038,6 @@ dialog button{
     height: 350px;
     padding: 40px;
     background-color: var(--bg-cta);
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1066,4 +1076,103 @@ dialog button{
 }
 .shield__icon{
     width: 100px;
+}
+
+
+/* Memory Game */
+
+.score__screen{
+    padding: 20px 0;
+    text-align: center;
+}
+.board__container{
+    padding: 0 5px;
+
+}
+.board{
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 20px;
+    gap: 5px;
+}
+.card{
+    width: 115px;
+    height: 160px;
+}
+
+.card div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: .3s ease-in-out;
+}
+
+.front{
+    border: none;
+    background-color: #212121;
+    background-image: url(/img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.back{
+    border: none;
+    background-color: #212121;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: perspective(300px) rotateY(180deg);
+}
+
+.flip__front{
+    transform: perspective(300px) rotateY(180deg);
+}
+
+.flip__back{
+    transform: perspective(500px) rotateY(360deg);
+}
+
+@media (min-width: 768px){
+    .board{
+        width: 95%;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .card{
+        width: 150px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 1200px){
+    .board__container{
+        min-width: 100%;
+        height: auto;
+        padding-top: 0;
+    }
+    .score__screen{
+        padding: 20px 150px;
+    }
+    .board{
+        width: 800px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 50px 0;
+        gap: 20px;
+    }
+    .card{
+        width: 150px;
+        height: 200px;
+        border: none;
+        cursor: pointer;
+        margin: 0;
+        position: relative;
+    }
 }
