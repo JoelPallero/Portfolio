@@ -7,13 +7,20 @@
   let cardBack1;
   let cardFront2;
   let cardBack2;
-  let count = [];
-
   let newArray = [];
-  // i will obtain the id of the clicked card
+  
+  const doneMoves = document.getElementById('moves');
+  const doneMatches = document.getElementById('matches');
+  const minTimer = document.getElementById('m_timer');
+  const secTimer = document.getElementById('s_timer');
+  let timerInterval;
+
+  
+  const resetButton = document.getElementById('reset__button');
+
+  // i will get the id of the clicked card
   document.querySelectorAll('.front').forEach(card => {
     card.addEventListener('click', e => {
-
       if (countCardFlip == 0) {
         clickedFirstCard = e.target.getAttribute('id');
         countCardFlip++;
@@ -21,10 +28,38 @@
         clickedSecondCard = e.target.getAttribute('id');
         countCardFlip++;
       }
+      chekTimer();
+      movesRecorded();
       flipCard(countCardFlip);
-
     });
   });
+
+  //reset event
+  resetButton.addEventListener('click', () => {
+    document.querySelectorAll('.front').forEach(card => {
+      card.classList.remove("flip__front");
+    });
+    document.querySelectorAll('.back').forEach(card => {
+      card.classList.remove("flip__back");
+    });
+    msj.innerText = 'FLip any card you want, and start playing!';
+    msj.style.color = '#000';
+    doneMoves.innerText = 0;
+    doneMatches.innerText = 0;
+    shuffleArray(imagenes);
+    cardAssignment();
+    resetTimer();
+    minTimer.innerText = '00';
+    secTimer.innerText = '00';
+  });
+
+  function chekTimer(){
+    min = Number(minTimer.innerText);
+    sec = Number(secTimer.innerText);
+    if(min === 0 || sec === 0){
+      startTimer();
+    }
+  }
 
   // array creation from 0 to 11
   const imagenes = [
@@ -33,9 +68,6 @@
     '/img/0.jpg', '/img/1.jpg', '/img/2.jpg',
     '/img/3.jpg', '/img/4.jpg', '/img/5.jpg'
   ];
-
-  // call to the mix function
-  shuffleArray(imagenes);
 
   //  mix array number function
   function shuffleArray(array) {
@@ -46,19 +78,21 @@
   }
 
   // assign the image to every card
-  for (let i = 0; i < imagenes.length; i++) {
-    let cardId = document.getElementById(`back${i}`);
-    let urlImage = `url(${imagenes[i]})`;
-    cardId.style.backgroundImage = urlImage;
-
-    newArray.push({
-      id: `back${i}`,
-      url: `${imagenes[i]}`
-    });
+  function cardAssignment(){
+    for (let i = 0; i < imagenes.length; i++) {
+      let cardId = document.getElementById(`back${i}`);
+      let urlImage = `url(${imagenes[i]})`;
+      cardId.style.backgroundImage = urlImage;
+  
+      newArray.push({
+        id: `back${i}`,
+        url: `${imagenes[i]}`
+      });
+    }
   }
 
 
-  //flip cards
+  //flip cards assigning the right class to every card to flip the front and the back of every img the user clicked on.
   function flipCard(countCardFlip) {
     if (countCardFlip == 1) {
       cardFront1 = document.getElementById(`${clickedFirstCard}`);
@@ -86,33 +120,56 @@
 
   }
 
+  //i get the url of the img, to compare the to see if there is a match between 2 flipped cards
   function getUrlById(id) {
     const elemento = newArray.find(item => item.id === id);
     return elemento ? elemento.url : null;
   }
 
+  //check the match cards
   function checkMatches() {
     let url1 = getUrlById(`back${clickedFirstCard}`);
     let url2 = getUrlById(`back${clickedSecondCard}`);
 
     if (url1 === url2) {
-      if (count === 10) {
-        alert("Congratulations!! You won");
-      } else {
-        setTimeout(() => {
-          msj.innerText = 'Well done! Keep going!!';
-          msj.style.color = 'green';
-          resetVariables();
-        }, 500);
-      }
-      count[0] += 1;
-      console.log(count[0])
+      checkAllCards();
     } else {
-      setTimeout(() => {
-        flipCard(0);
-      }, 1000);
+      setMsgTime(2, 1000, 'Keep trying!!', 'red');
     }
-    console.log(count);
+  }
+
+  //check to see if all cards are flipped or not yet
+  function checkAllCards(){
+    const checkedCards = [...document.querySelectorAll('.flip__back')];
+    matchesRecorded();
+    if (checkedCards.length === 12){
+      stopTimer();
+      setMsgTime(1, 500, 'Congratulations, You won!!', 'green');
+    }
+    else if(checkedCards.length > 0 && checkedCards.length < 11){      
+      setMsgTime(1, 500, 'Well done! Keep going!!', 'green');
+      resetVariables();
+    }
+  }
+
+  //set the message time to flip the wrong matches and to change the message color
+  function setMsgTime(option, time, msg, color){
+    switch (option){
+      case 1:
+        setTimeout(() => {
+          msj.innerText = msg;
+          msj.style.color = color;
+        }, time);
+      break;
+
+      case 2:
+        setTimeout(() => {
+          msj.innerText = msg;
+          msj.style.color = color;
+          flipCard(0);
+        }, time);
+      break;
+    }
   }
 
   function resetVariables() {
@@ -125,5 +182,63 @@
     cardBack2 = null;
     count = 0;
   }
+
+  function movesRecorded(){
+    let count = Number(doneMoves.innerText);
+    count++;
+    doneMoves.innerText = count;    
+  }
+
+  function matchesRecorded(){
+    let count = Number(doneMatches.innerText);    
+    count++
+    doneMatches.innerText = count;
+  }
+
+  function resetTimer(){
+    stopTimer();
+    min = '00';
+    sec = '00';
+    cronometro();
+  }
+
+  function stopTimer(){
+    clearInterval(timerInterval);
+    timerInterval = null;
+  }
+
+  function startTimer(){
+    if (!timerInterval){
+      timerInterval = setInterval(cronometro, 1000);
+    }
+  }
+
+  function cronometro() {
+    let min = Number(minTimer.innerText);
+        let sec = Number(secTimer.innerText);
+
+        if (sec < 59) {
+          sec = sec < 9 ? "0" + String(sec + 1) : String(sec + 1);
+          if(min < 10){
+            min = String("0" + min); 
+          }
+          else{
+            min = String(min);  
+          }
+        } else {
+          sec = "00";
+          if (min < 59) {
+            min = min < 9 ? "0" + String(min + 1) : String(min + 1);
+          }
+        }
+
+        secTimer.innerText = String(sec);
+        minTimer.innerText = String(min);
+  }
+
+  // call to the mix function
+  shuffleArray(imagenes);
+  //call to assign every card
+  cardAssignment();
 
 })();
