@@ -19,8 +19,9 @@
     <header class="header container">
         <section class="skin">
             <div class="logo" id="logo">
-                <a href="/"><img loading="lazy" src="/img/profile-3.png" alt="profile photo" class="logo-img"></a>
-                <h2 class="subtitle">Joel Pallero</h2>
+                <a href="/" class="logo-img-container">
+                    <img loading="lazy" src="/img/profile-3.png" alt="profile photo" class="logo-img">
+                </a>
                 <div class="caps">
                     <a target="_blank" href="https://www.linkedin.com/in/joel-pallero/" class="sphere-link profile-links linkedin">
                         <img loading="lazy" src="/img/icons/linkedin.svg" alt="LinkedIn">
@@ -29,9 +30,9 @@
                         <img loading="lazy" src="/img/icons/gh.svg" alt="LinkedIn">
                     </a>
                     <a href="/documents/resume-english.pdf" download="resume-joel-pallero.pdf" class="resume">
-                        Resume
+                        CV
                         <img loading="lazy" src="/img/icons/download.svg" alt="Download icon" class="download-icon">
-                    </a href="/documents/resume-english.pdf" download="resume-joel-pallero.pdf">
+                    </a>
                 </div>
             </div>
             <div class="bg-mode" id="bg-mode">
@@ -41,9 +42,9 @@
         </section>
     </header>
 
-    <main class="main" id="main">
+    <main class="main container" id="main">
         <!-- Who am i -->
-        <section class="profile all-width">
+        <section class="profile">
             <div class="profile-photo">
                 <img loading="lazy" src="/img/profile-3.png" alt="profile photo" class="joel-photo">
             </div>
@@ -51,23 +52,23 @@
                 <h2 class="title">Joel Pallero</h2>
                 <p class="paragraph">I am a FrontEnd Web developer.</p>
                 <div class="caps" id="caps">
-                    <a target="_blank" href="https://www.linkedin.com/in/joel-pallero/" class="sphere-link profile-links linkedin">
+                    <a target="_blank" href="https://www.linkedin.com/in/joel-pallero/" class="profile-links linkedin">
                         <img loading="lazy" src="/img/icons/linkedin.svg" alt="LinkedIn">
                     </a>
-                    <a target="_blank" href="https://github.com/JoelPallero" class="sphere-link profile-links github">
+                    <a target="_blank" href="https://github.com/JoelPallero" class="profile-links github">
                         <img loading="lazy" src="/img/icons/gh.svg" alt="LinkedIn">
                     </a>
                     <a href="/documents/resume-english.pdf" download="resume-joel-pallero.pdf" class="resume">
                         Resume
                         <img loading="lazy" src="/img/icons/download.svg" alt="Download icon" class="download-icon">
-                    </a href="/documents/resume-english.pdf" download="resume-joel-pallero.pdf">
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- Job Experience -->
         <section class="experience">
-            <div class="header-main all-width">
+            <div class="header-main">
                 <h2 class="title-section">
                     Experience
                 </h2>
@@ -91,7 +92,7 @@
                         <div class="c-technology">
                             <img loading="lazy" class="tech-icons" src="/img/icons/wordpress.svg" alt="wordpress">
                         </div>
-                        <a target="_blank" href="https://hacer.com.ar" class="c-buttton"> 
+                        <a target="_blank" href="https://hacer.com.ar" class="c-button"> 
                             Go to
                             <img loading="lazy" src="/img/icons/link.svg" alt="link" class="svg-link">                                
                         </a>
@@ -116,7 +117,7 @@
                         <div class="c-technology">
                             <img loading="lazy" class="tech-icons" src="/img/icons/wordpress.svg" alt="wordpress">
                         </div>
-                        <a target="_blank" href="https://misionescitaconlavida.com.ar" class="c-buttton"> 
+                        <a target="_blank" href="https://misionescitaconlavida.com.ar" class="c-button"> 
                             Go to
                             <img loading="lazy" src="/img/icons/link.svg" alt="link" class="svg-link">                                
                         </a>
@@ -142,7 +143,7 @@
                             <img loading="lazy" class="tech-icons" src="/img/icons/wordpress.svg" alt="wordpress">
                             <img loading="lazy" class="tech-icons" src="/img/icons/css.svg" alt="css">
                         </div>
-                        <a target="_blank" href="https://fundacionesperanza.com.ar" class="c-buttton"> 
+                        <a target="_blank" href="https://fundacionesperanza.com.ar" class="c-button"> 
                             Go to
                             <img loading="lazy" src="/img/icons/link.svg" alt="link" class="svg-link">                                
                         </a>
@@ -167,7 +168,7 @@
                         <div class="c-technology">
                             <img loading="lazy" class="tech-icons" src="/img/icons/wordpress.svg" alt="wordpress">
                         </div>
-                        <a target="_blank" href="https://maranathaargentina.com" class="c-buttton"> 
+                        <a target="_blank" href="https://maranathaargentina.com" class="c-button"> 
                             Go to
                             <img loading="lazy" src="/img/icons/link.svg" alt="link" class="svg-link">                                
                         </a>
@@ -179,10 +180,10 @@
 
         </section>
 
-        <!-- Questions about me -->
+        <!-- about me -->
         <section class="questions" id="curriculum">
             <h2 class="title">About Me</h2>
-            <p class="paragraph">Hi! I am Joel. <br>
+            <p class="paragraph subtitle-introduction">Hi! I am Joel. <br>
                                             I'm the designer and developer of this Web Site</p>
             <section class="questions__container">
                 <article class="questions__padding">
@@ -195,7 +196,7 @@
                             I'm Joel Pallero, I'm 31 years old and I come from Argentina.<br>
                             I have a degree in software Development. I studied programming at the <a href="https://www.institutotecnicocordoba.com/" target="_blank" class="portfolio__link">Córdoba Higher Technical Institute.</a>
                             <br>
-                            Currently, I am developing web pages, and I am delving into programming languages ​​​​like javascript. My goal is to master the language as much as possible to be excellent in libraries like React.Js and Node.Js.
+                            Currently, I am developing web pages, and I am delving into programming languages, like javascript. My goal is to master the language as much as possible to be excellent in libraries like React.Js and Node.Js.
                         </p>
                     </div>
                 </article>
@@ -221,12 +222,12 @@
                             </span>
                         </h3>
                         <div class="questions__show questions__show--tablets">
-                            <p class="paragraph lenguage__tablet" title="Average advanced level">HTML</p>
-                            <p class="paragraph lenguage__tablet" title="Average advanced level">CSS</p>
-                            <p class="paragraph lenguage__tablet" title="Average advanced level">JS</p>
-                            <p class="paragraph lenguage__tablet" title="Average advanced level">SQL</p>
-                            <p class="paragraph lenguage__tablet" title="Basic programming">C#</p>
-                            <p class="paragraph lenguage__tablet" title="">GitHub</p>
+                            <p class="lenguage__tablet" title="Average advanced level">HTML</p>
+                            <p class="lenguage__tablet" title="Average advanced level">CSS</p>
+                            <p class="lenguage__tablet" title="Average advanced level">JS</p>
+                            <p class="lenguage__tablet" title="Average advanced level">SQL</p>
+                            <p class="lenguage__tablet" title="Basic programming">C#</p>
+                            <p class="lenguage__tablet" title="">GitHub</p>
                         </div>
                     </div>
                 </article>
@@ -246,12 +247,12 @@
                 </article>
 
             </section>
-        </section>  
+        </section>
 
         <!-- Memory Game -->
-        <section class="container__game">
-            <h3 class="subtitle"> Are you boring? Let's play a memory game!</h3>
+        <section class="container__game">            
             <div class="score__screen--msg">
+                <h3 class="subtitle"> Are you boring? Let's play a memory game!</h3>
                 <h4><span id="msj">FLip any card you want, and start playing!</span></h4>
             </div>
         
@@ -383,7 +384,7 @@
                 </section>
     
                 <section class="reset__game">
-                    <button class="c-buttton reset__button sombreado" id="reset__button">Reset</button>
+                    <button class="c-button reset__button sombreado" id="reset__button">Reset</button>
                 </section>
     
             </div>        
