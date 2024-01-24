@@ -1,83 +1,197 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+    <link rel="shortcut icon" href="/img/logo-tipo-small.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/app.css">
 
 
-    <title>Home Page</title>
 
+    <title>Joel Pallero - Portfolio</title>
 </head>
 
-<body>
-    <header class="header" id="header">
-        <nav class="nav">
-            <div class="nav__container">
-                <div class="nav__logo">                
-                    <h2 class="nav__title">
-                        <a href="/" class="logo">
-                            <img src="/img/logo-tipo-small.png" alt="" class="logo__img">
-                        </a>
-                        Joel Pallero
-                    </h2>
+<body class="container">
+    <header class="header container">
+        <section class="skin">
+            <div class="logo" id="logo">
+                <a href="/"><img loading="lazy" src="/img/profile-3.png" alt="profile photo" class="logo-img"></a>
+                <h2 class="subtitle">Joel Pallero</h2>
+                <div class="caps">
+                    <a target="_blank" href="" class="sphere-link profile-links linkedin">
+                        <img loading="lazy" src="/img/icons/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a target="_blank" href="" class="sphere-link profile-links github">
+                        <img loading="lazy" src="/img/icons/gh.svg" alt="LinkedIn">
+                    </a>
+                    <a href="/documents/resume-english.pdf" download="resume-joel-pallero.pdf" class="resume">
+                        Resume
+                        <img loading="lazy" src="/img/icons/download.svg" alt="Download icon" class="download-icon">
+                    </a href="/documents/resume-english.pdf" download="resume-joel-pallero.pdf">
                 </div>
-                <ul class="nav__link nav__link--menu">
-                    <li class="nav__items">
-                        <a href="/index.html" class="nav__links">home</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="/portfolio.html" class="nav__links">Portfolio</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#contacto" class="nav__links">contact</a>
-                    </li>
-    
-                    <img src="/img/icons/close.svg" alt="close" class="nav__close">
-                </ul>
-    
-                <div class="nav__menu">
-                    <img src="/img/icons/menu.svg" alt="menu">
-                </div>
-            </div>                
-        </nav>
+            </div>
+            <div class="bg-mode" id="bg-mode">
+                <img loading="lazy" src="/img/icons/moon.svg" alt="dark mode" class="moon dark-mode-icon">
+                <img loading="lazy" src="/img/icons/sun.svg" alt="light mode" class="sun dark-mode-icon">
+            </div>
+        </section>
     </header>
 
-    <main>        
-        <section class="hero__background">
-            <section class="background__bg">
-                <section class="hero__container">
-                    <h1 class="hero__title">
-                        Welcome to my Web Site
-                    </h1>
-                    <p class="hero__paragraph">Here, you will be able to know about me, and my work as a software engineer</p>
-                    <a href="#curriculum" class="cta">See more</a>
-                </section>
-            </section>
-            <section class="background_img">
-                <img src="/img/banner-main.png" alt="" class="bg__img">
-            </section>
+    <main class="main" id="main">
+        <!-- Who am i -->
+        <section class="profile all-width">
+            <div class="profile-photo">
+                <img loading="lazy" src="/img/profile-3.png" alt="profile photo" class="joel-photo">
+            </div>
+            <div class="introduction">
+                <h2 class="title">Joel Pallero</h2>
+                <p class="paragraph">I am a FrontEnd Web developer.</p>
+                <div class="caps" id="caps">
+                    <a target="_blank" href="" class="sphere-link profile-links linkedin">
+                        <img loading="lazy" src="/img/icons/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a target="_blank" href="" class="sphere-link profile-links github">
+                        <img loading="lazy" src="/img/icons/gh.svg" alt="LinkedIn">
+                    </a>
+                    <a href="/documents/resume-english.pdf" download="resume-joel-pallero.pdf" class="resume">
+                        Resume
+                        <img loading="lazy" src="/img/icons/download.svg" alt="Download icon" class="download-icon">
+                    </a href="/documents/resume-english.pdf" download="resume-joel-pallero.pdf">
+                </div>
+            </div>
         </section>
 
-        <section class="questions container" id="curriculum">
-            <h2 class="subtitle">CV</h2>
-            <img src="/img/profile.png" alt="" class="profile-photo sombreado">
-            <p class="questions__paragraph">Hi! I am Joel. <br>
+        <!-- Job Experience -->
+        <section class="experience">
+            <div class="header-main all-width">
+                <h2 class="title-section">
+                    Experience
+                </h2>
+                <img loading="lazy" src="/img//icons/case.svg" alt="briefcase" class="experience-icon">
+            </div>
+
+            <div class="dev-job">
+                <div class="jgeneral-title">
+                    <h3 class="job-title">Web Developer | Hacer - Financier</h3>
+                </div>
+                <div class="job-info">
+                    <div class="client-web">
+                        <a target="_blank" href="https://hacer.com.ar" class="link-img">
+                            <img loading="lazy" src="/img/hacer-web.png" alt="Hacer web" class="client-web-img">
+                        </a>
+                    </div>
+                    <div class="client-info">
+                        <p class="paragraph c-info">
+                            I designed and developed the website, according to the client's requirements, and WordPress was used at the client's request as well.
+                        </p>
+                        <div class="c-technology">
+                            <img loading="lazy" class="tech-icons" src="/img/icons/wordpress.svg" alt="wordpress">
+                        </div>
+                        <a target="_blank" href="https://hacer.com.ar" class="c-buttton"> 
+                            Go to
+                            <img loading="lazy" src="/img/icons/link.svg" alt="link" class="svg-link">                                
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dev-job">
+                <div class="jgeneral-title">
+                    <h3 class="job-title">Web Developer | Misiones Cita con la Vida</h3>
+                </div>
+                <div class="job-info">
+                    <div class="client-web">
+                        <a target="_blank" href="https://misionescitaconlavida.com.ar" class="link-img">
+                            <img loading="lazy" src="/img/misiones-web.png" alt="Misiones web" class="client-web-img">
+                        </a>
+                    </div>
+                    <div class="client-info">
+                        <p class="paragraph c-info">
+                            I designed and developed the website, according to the client's requirements, and WordPress was used at the client's request as well.
+                        </p>
+                        <div class="c-technology">
+                            <img loading="lazy" class="tech-icons" src="/img/icons/wordpress.svg" alt="wordpress">
+                        </div>
+                        <a target="_blank" href="https://misionescitaconlavida.com.ar" class="c-buttton"> 
+                            Go to
+                            <img loading="lazy" src="/img/icons/link.svg" alt="link" class="svg-link">                                
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dev-job">
+                <div class="jgeneral-title">
+                    <h3 class="job-title">Web Developer | Fundacion Esperanza</h3>
+                </div>
+                <div class="job-info">
+                    <div class="client-web">
+                        <a target="_blank" href="https://fundacionesperanza.com.ar" class="link-img">
+                            <img loading="lazy" src="/img/fe-web.png" alt="Fundacion Esperanza web" class="client-web-img">
+                        </a>
+                    </div>
+                    <div class="client-info">
+                        <p class="paragraph c-info">
+                            I designed and developed the website, according to the client's requirements, and WordPress was used at the client's request as well.
+                        </p>
+                        <div class="c-technology">
+                            <img loading="lazy" class="tech-icons" src="/img/icons/wordpress.svg" alt="wordpress">
+                            <img loading="lazy" class="tech-icons" src="/img/icons/css.svg" alt="css">
+                        </div>
+                        <a target="_blank" href="https://fundacionesperanza.com.ar" class="c-buttton"> 
+                            Go to
+                            <img loading="lazy" src="/img/icons/link.svg" alt="link" class="svg-link">                                
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dev-job">
+                <div class="jgeneral-title">
+                    <h3 class="job-title">Collaboration | Fundacion Esperanza</h3>
+                </div>
+                <div class="job-info">
+                    <div class="client-web">
+                        <a target="_blank" href="https://maranathaargentina.com" class="link-img">
+                            <img loading="lazy" src="/img/maranatha-web.png" alt="Fundacion Esperanza web" class="client-web-img">
+                        </a>
+                    </div>
+                    <div class="client-info">
+                        <p class="paragraph c-info">
+                            I collaborated in the arrangement and correction of the website's functionalities, once it had been done by another developer.
+                        </p>
+                        <div class="c-technology">
+                            <img loading="lazy" class="tech-icons" src="/img/icons/wordpress.svg" alt="wordpress">
+                        </div>
+                        <a target="_blank" href="https://maranathaargentina.com" class="c-buttton"> 
+                            Go to
+                            <img loading="lazy" src="/img/icons/link.svg" alt="link" class="svg-link">                                
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <!-- Questions about me -->
+        <section class="questions" id="curriculum">
+            <h2 class="title">About Me</h2>
+            <p class="paragraph">Hi! I am Joel. <br>
                                             I'm the designer and developer of this Web Site</p>
             <section class="questions__container">
                 <article class="questions__padding">
                     <div class="questions__answers">
                         <h3 class="questions__title">Who am I?
-                            <span class="questions__arrow"><img src="/img/icons/chevron-dn.svg" alt=""
+                            <span class="questions__arrow"><img loading="lazy" src="/img/icons/chevron-dn.svg" alt=""
                                     class="questions__img"></span>
                         </h3>
-                        <p class="questions__show">
+                        <p class="paragraph questions__show">
                             I'm Joel Pallero, I'm 31 years old and I come from Argentina.<br>
                             I have a degree in software Development. I studied programming at the <a href="https://www.institutotecnicocordoba.com/" class="portfolio__link">Córdoba Higher Technical Institute.</a>
                             <br>
@@ -89,18 +203,12 @@
                 <article class="questions__padding">
                     <div class="questions__answers">
                         <h3 class="questions__title">Work Experience
-                            <span class="questions__arrow"><img src="/img/icons/chevron-dn.svg" alt=""
+                            <span class="questions__arrow"><img loading="lazy" src="/img/icons/chevron-dn.svg" alt=""
                                     class="questions__img"></span>
                         </h3>
-                        <p class="questions__show work">
+                        <p class="paragraph questions__show work">
                             <span class="job__title">Wordpress Designer</span><br>
-                            I am currently working as a FreeLancer web designer on Wordpress.<button class="open__modal">Here</button>you will able to see some of my Work with regular clients that I have been able to work on during the year 2023.<br><br>
-                            <span class="job__title">Call Center Agent (Former Employee)</span><br>
-                            I worked for a period of 5 and a half years in a Call Center: <a href="https://www.v-n.com.ar/"
-                                class="portfolio__link">VN Global BPO</a>. My tasks were: Customer service through
-                            various means (such as telephone, via Mail, Chat, etc.), Refinancing of telephone debts,
-                            Credit limit for Corporate Clients, After-Sales Service in home internet installation, among
-                            others tasks.
+                            I am currently working as a FreeLancer web designer on Wordpress and FrontEnd Developer<br><br>
                         </p>
                     </div>
                 </article>
@@ -109,16 +217,16 @@
                     <div class="questions__answers">
                         <h3 class="questions__title">Programming Languages
                             <span class="questions__arrow">
-                                <img src="/img/icons/chevron-dn.svg" class="questions__img">
+                                <img loading="lazy" src="/img/icons/chevron-dn.svg" class="questions__img">
                             </span>
                         </h3>
                         <div class="questions__show questions__show--tablets">
-                            <p class="lenguage__tablet" title="Average advanced level">HTML</p>
-                            <p class="lenguage__tablet" title="Average advanced level">CSS</p>
-                            <p class="lenguage__tablet" title="Average advanced level">JS</p>
-                            <p class="lenguage__tablet" title="Average advanced level">SQL</p>
-                            <p class="lenguage__tablet" title="Basic programming">C#</p>
-                            <p class="lenguage__tablet" title="">GitHub</p>
+                            <p class="paragraph lenguage__tablet" title="Average advanced level">HTML</p>
+                            <p class="paragraph lenguage__tablet" title="Average advanced level">CSS</p>
+                            <p class="paragraph lenguage__tablet" title="Average advanced level">JS</p>
+                            <p class="paragraph lenguage__tablet" title="Average advanced level">SQL</p>
+                            <p class="paragraph lenguage__tablet" title="Basic programming">C#</p>
+                            <p class="paragraph lenguage__tablet" title="">GitHub</p>
                         </div>
                     </div>
                 </article>
@@ -126,152 +234,180 @@
                 <article class="questions__padding">
                     <div class="questions__answers">
                         <h3 class="questions__title">Idioms
-                            <span class="questions__arrow"><img src="/img/icons/chevron-dn.svg" alt=""
+                            <span class="questions__arrow"><img loading="lazy" src="/img/icons/chevron-dn.svg" alt=""
                                     class="questions__img"></span>
                         </h3>
                         <div class="questions__show questions__show--tablets">
-                            <p class="lenguage__tablet" title="Native">Spanish (Native)</p>
-                            <p class="lenguage__tablet" title="Conversational Level">English</p>
-                            <p class="lenguage__tablet" title="Basic sentences - Average advance listening level">Portuguese</p>
+                            <p class="paragraph lenguage__tablet" title="Native">Spanish (Native)</p>
+                            <p class="paragraph lenguage__tablet" title="Conversational Level">English</p>
+                            <p class="paragraph lenguage__tablet" title="Basic sentences - Average advance listening level">Portuguese</p>
                         </div>
                     </div>
                 </article>
 
             </section>
         </section>  
+
+        <!-- Memory Game -->
+        <section class="container__game">
+            <h3 class="subtitle"> Are you boring? Let's play a memory game!</h3>
+            <div class="score__screen--msg">
+                <h4><span id="msj">FLip any card you want, and start playing!</span></h4>
+            </div>
         
-        <section class="card container">
-            <h2 class="subtitle">Portfolio</h2>
-            <p class="about__paragraph about__paragraph--portfolio">Diseños web hechos en wordpress | Juegos y
-                ejercicios hechos con Javascript</p>
-
-            <div class="card__table">
-                <div class="card__element card__element--portfolio sombreado">
-                    <img src="/img/icons/wordpress.svg" alt="" class="client__icon">
-                    <div class="card__items">
-                        <p class="card__features">Real Clients</p>
+            <div class="general__container">
+                <section class="score__screen">
+                    <div class="time">
+                        <h3>Time: <span id="m_timer">00</span>:<span id="s_timer">00</span></h3>
                     </div>
-                    <a href="/portfolio/clients.html" class="card__cta">See More</a>
-                </div>
 
-                <div class="card__element card__element--portfolio sombreado">
-                    <img src="/img/icons/javascript.svg" alt="" class="client__icon">
-                    <div class="card__items">
-                        <p class="card__features">Practice and more</p>
+                    <div class="moves">
+                        <h3>Moves: <span id="moves">0</span></h3>
                     </div>
-                    <a href="/portfolio.html" class="card__cta">See More</a>
-                </div>
-
-                <div class="card__element card__element--portfolio sombreado">
-                    <img src="/img/icons/wordpress.svg" alt="" class="client__icon">
-                    <div class="card__items">
-                        <p class="card__features">IDK what to put in here</p>
+                    
+                    <div class="matches">
+                        <h3>Matches: <span id="matches">0</span></h3>
                     </div>
-                    <a href="#" class="card__cta">See More</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="knowledge">
-            <div class="knowledge__container">
-                <div class="knowledge__texts">
-                    <h2 class="subtitle">Joel Pallero</h2>
-                    <div class="knowledge__contact">
-                        <p class="knowledge__paragraph">
-                            +54 351 2149461
-                        </p>
-                        <p class="knowledge__paragraph">
-                            contacto@joelpallero.com.ar
-                        </p>                        
+                </section>
+    
+                <section class="board">
+            
+                    <div class="p-card">
+                        <div class="sombreado front" id="0">
+        
+                        </div>
+                        <div class="sombreado back" id="back0">
+        
+                        </div>                
                     </div>
-                    <a href="#" class="cta2">contact me</a>
-                </div>
-
-            </div>
-        </section>
+        
+                    <div class="p-card">
+                        <div class="sombreado front" id="1">
+        
+                        </div>
+                        <div class="sombreado back" id="back1">
+        
+                        </div>                
+                    </div>
+        
+                    <div class="p-card">
+                        <div class="sombreado front" id="2">
+        
+                        </div>
+                        <div class="sombreado back" id="back2">
+        
+                        </div>                
+                    </div>
+        
+                    <div class="p-card">
+                        <div class="sombreado front" id="3">
+        
+                        </div>
+                        <div class="sombreado back" id="back3">
+        
+                        </div>                
+                    </div>
+        
+                    <div class="p-card">
+                        <div class="sombreado front" id="4">
+        
+                        </div>
+                        <div class="sombreado back" id="back4">
+        
+                        </div>                
+                    </div>
+        
+                    <div class="p-card">
+                        <div class="sombreado front" id="5">
+        
+                        </div>
+                        <div class="sombreado back" id="back5">
+        
+                        </div>                
+                    </div>
+        
+                    <div class="p-card">
+                        <div class="sombreado front" id="6">
+        
+                        </div>
+                        <div class="sombreado back" id="back6">
+        
+                        </div>                
+                    </div>
+        
+                    <div class="p-card">
+                        <div class="sombreado front" id="7">
+        
+                        </div>
+                        <div class="sombreado back" id="back7">
+        
+                        </div>                
+                    </div>
+        
+                    <div class="p-card">
+                        <div class="sombreado front" id="8">
+        
+                        </div>
+                        <div class="sombreado back" id="back8">
+        
+                        </div>                
+                    </div>
+        
+                    <div class="p-card">
+                        <div class="sombreado front" id="9">
+        
+                        </div>
+                        <div class="sombreado back" id="back9">
+        
+                        </div>                
+                    </div>
+        
+                    <div class="p-card">
+                        <div class="sombreado front" id="10">
+        
+                        </div>
+                        <div class="sombreado back" id="back10">
+        
+                        </div>                
+                    </div>
+        
+                    <div class="p-card">
+                        <div class="sombreado front" id="11">
+        
+                        </div>
+                        <div class="sombreado back" id="back11">
+        
+                        </div>                
+                    </div>
+        
+                </section>
+    
+                <section class="reset__game">
+                    <button class="c-buttton reset__button sombreado" id="reset__button">Reset</button>
+                </section>
+    
+            </div>        
+        </section> 
     </main>
 
-    <!-- Modal Clients -->
-    <dialog>
-        <form method="dialog">
-            <h3 class="questions__title">Some of my Clients</h3>
-            <section class="client__section">                 
-                <a href="https://fundacionesperanza.com.ar" class="client__link">
-                    <img src="/img/fundacion-esperanza.png" alt="" class="cliente__img">  
-                </a>
-            </section>
-            
-            <section class="client__section">                 
-                <a href="https://hacer.com.ar" class="client__link">
-                    <img src="/img/hacer.png" alt="" class="cliente__img">  
-                </a>
-            </section>
 
-            
-            <section class="client__section">                
-                <a href="https://maranathaargentina.com" class="client__link">
-                    <img src="/img/maranatha.png" alt="" class="cliente__img maranatha__img">   
-                </a>
-            </section>
-
-            <button type="submit">Close</button>
-        </form>
-    </dialog>
-
-
-
-
-    <footer class="footer">
-        <section class="footer__container container">
-
-            <section class="logotipo">
-                <img src="/img/logo-tipo-small.png" alt="">
-            </section>
-
-            <nav class="nav nav--footer">
-                <ul class="nav__link nav__link--footer">
-                    <li class="nav__items">
-                        <a href="" class="nav__links">home</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="/portfolio.html" class="nav__links">Portfolio</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-
-        <section class="footer__copy container">
-            <div class="footer__social">
-                <a href="#" class="footer__icons">
-                    <img src="/img/icons/gh.svg" alt="" class="footer__img">
-                </a>
-                <a href="#" class="footer__icons">
-                    <img src="/img/icons/ig.svg" alt="" class="footer__img">
-                </a>
+    <!-- Footer -->
+    <footer class="footer container">
+        <button class="email-container" id="copy-mail">
+            esteban.pallero@gmail.com
+            <div class="icons-container">
+                <img loading="lazy" src="/img/icons/copy.svg" alt="copy icon" class="ck-symbol copy-icon">
+                <img loading="lazy" src="/img/icons/checked.svg" alt="copy icon" class="ck-symbol check-icon">
             </div>
-
-            <h3 class="footer__copyright">
-                Derechos reservados &copy; Joel Pallero
-            </h3>
-        </section>
+        </button>
     </footer>
 
-
-    <!-- Home Button -->
-    <div class="up__button">
-        <a href="#header" class="link__up-button">
-            <img src="/img/icons/chevron-up.svg" alt="" class="up__button--icon">
-        </a>
-    </div>
-
-
-    <script src="/js/slider.js"></script>
-    <script src="/js/acordeon.js"></script>
-    <script src="/js/menu.js"></script>
-    <script src="/js/scroll-button.js"></script>
+    <!-- scripts -->
+    <script src="/js/questions.js"></script>
+    <script src="/js/memory-game.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/clipboard.js"></script>
+    <script src="/js/dark-mode.js"></script>
 </body>
 
 </html>
