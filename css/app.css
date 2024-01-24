@@ -564,6 +564,10 @@ img {
     color: var(--color-link);
 }
 
+.portfolio__link:hover{
+    color: var(--bg-reset-color);
+}
+
 .questions__show{
     text-align: left;
     height: 0;
