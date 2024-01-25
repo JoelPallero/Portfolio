@@ -16,6 +16,7 @@
 </head>
 
 <body class="container">
+    <!-- header -->
     <header class="header container">
         <section class="skin">
             <div class="logo" id="logo">
@@ -393,7 +394,7 @@
 
 
     <!-- Footer -->
-    <footer class="footer container">
+    <footer class="footer">
         <button class="email-container" id="copy-mail">
             esteban.pallero@gmail.com
             <div class="icons-container">
@@ -401,6 +402,16 @@
                 <img loading="lazy" src="/img/icons/checked.svg" alt="copy icon" class="ck-symbol check-icon">
             </div>
         </button>
+        <form class="form" id="contact-form">
+            <h2 class="subtitle">Contact Form</h2>
+            <input type="text" name="Name" placeholder="Name" id="client-name" required>
+            
+            <input type="email" name="Email"
+            placeholder="Email" id="email" required>
+
+            <textarea name="Message" placeholder="Message" id="message" rows="5" cols="30" required></textarea>
+            <button type="submit" id="send-button" class=""> Send <span class="sent-check">✓</span></button>
+        </form>
     </footer>
 
     <!-- scripts -->
@@ -409,6 +420,7 @@
     <script src="/js/header.js"></script>
     <script src="/js/clipboard.js"></script>
     <script src="/js/dark-mode.js"></script>
+    <script src="/js/form.js"></script>
 </body>
 
 </html>
