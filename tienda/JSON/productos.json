@@ -1,0 +1,93 @@
+{
+    "tocados": [{
+            "name": "Tocados",
+            "model": "Corona",
+            "img": {
+                "src": "img/corona2.jpg"
+            },
+            "description": "",
+            "color": "a elección",
+            "price": "A consultar"
+        },
+        {
+            "name": "Tocados",
+            "model": "Media corona",
+            "img": "",
+            "description": "",
+            "color": "a elección",
+            "price": "A consultar"
+        },
+        {
+            "name": "Tocados",
+            "model": "Aplique",
+            "img": "",
+            "description": "",
+            "color": "a elección",
+            "price": "A consultar"
+        }],
+
+    "ramos": [{
+            "name": "Ramos",
+            "model": "Tela",
+            "img": "",
+            "description": "",
+            "color": "a elección",
+            "price": "A consultar",
+        }, {
+            "name": "Ramos",
+            "model": "Foami",
+            "img": "",
+            "description": "",
+            "color": "a elección",
+            "price": "A consultar"
+        }],
+
+    "porta anillo": [{
+            "name": "Porta anillos para bodas",
+            "model":  "Canasta",
+            "img": "",
+            "medidas": {
+                "largo": "20cm",
+                "ancho": "17cm"
+            },
+            "description": "",
+            "price": "A consultar"
+        },{
+            "name": "Porta anillos para bodas",
+            "model": "Almohadilla",
+            "img": "",
+            "medidas": {
+                "diámetro": "40cm"
+            },
+            "description": "",
+            "price": "A consultar"
+        }],
+
+    "botonier": [{
+        "name": "Botonier",
+        "img": "",
+        "description": "",
+        "price": "A consultar"
+        }],
+
+    "bouquete para torta": [{
+        "name": "Bouquete para torta",
+        "img": "",
+        "description": "",
+        "price": "A consultar"
+        }],
+
+    "cola de novia": [{
+        "name": "Cola de novia",
+        "img": "",
+        "description": "Se alquila o se hacen colas a medida. Consultar precios para ambos casos",
+        "price": "A consultar"
+        }],
+
+    "pulseras": [{
+        "name": "Pulseras para dama de honor",
+        "img": "",
+        "description": "",
+        "price": "A consultar"
+    }]    
+}

@@ -264,7 +264,9 @@ img {
         padding: 20px;
     }
 
-
+    #producto-page .main-section{
+        grid-template-columns: 1fr;
+    }
 
     .main-section{
         display: grid;
