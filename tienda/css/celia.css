@@ -25,7 +25,8 @@ Variables
     --par-color: #575757;
     --parr-btn-color: #dddddd;
     --color-link: #212121;
-    --rosa-letter: #FF66C4;
+    --rosa-letter: #FF66C4; /* #FF66C4 */
+    --art-link: #91946a;
 
     /* social icons */
     --gh-color: #83319c;
@@ -40,7 +41,10 @@ Variables
     --bg-header-color: #a2b3fff1;
     --br-btn-color: #0a072e;
     --br-card-color: #212121;
-    --bg-body: #daa7bc73;
+    --bg-body: #dddddd9f; /* #daa7bc73 */
+    --bg-article: #ffffff;
+
+    --bg-footer: #cf92b8;
 
     /* border color */
     --border-color: #cacaca;
@@ -205,7 +209,7 @@ img {
 
 .article{
     padding: 20px;
-    background-color: var(--bg-pry);
+    background-color: var(--bg-article);
     opacity: 1;
     display: flex;
     flex-direction: column;
@@ -239,9 +243,47 @@ img {
 .product-link{
     margin-left: auto;
     font-size: 14px;
-    color: var(--rosa-letter);
+    color: var(--art-link);
 }
 
+
+/* Footer */
+
+.footer{
+    width: 100%;
+    background-color: var(--bg-footer);
+}
+
+.footer .container{    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.form{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.form input,
+.form textarea{
+    border-radius: 5px;
+    border: 0;
+}
+
+.form input{
+    width: 80%;
+    height: 30px;
+}
+
+.form textarea{
+    width: 80%;
+}
 
 @media (min-width: 480px) {
     .container{
