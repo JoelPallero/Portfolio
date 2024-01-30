@@ -25,8 +25,8 @@ Variables
     --par-color: #575757;
     --parr-btn-color: #dddddd;
     --color-link: #212121;
-    --rosa-letter: #FF66C4; /* #FF66C4 */
-    --art-link: #91946a;
+    --rosa-letter: #ED8C8C; /* #FF66C4 */
+    --art-link: #ee5353;
 
     /* social icons */
     --gh-color: #83319c;
@@ -41,10 +41,10 @@ Variables
     --bg-header-color: #a2b3fff1;
     --br-btn-color: #0a072e;
     --br-card-color: #212121;
-    --bg-body: #dddddd9f; /* #daa7bc73 */
+    --bg-body: #f3f3f39f; /* #daa7bc73 */
     --bg-article: #ffffff;
 
-    --bg-footer: #cf92b8;
+    --bg-footer: #cf92b89a;
 
     /* border color */
     --border-color: #cacaca;
@@ -254,26 +254,36 @@ img {
     background-color: var(--bg-footer);
 }
 
-.footer .container{    
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: center;
-    align-items: center;
+.footer .container{
+    width: 100%;
     padding: 50px 0;
+    gap: 40px;
 }
 
-.form{    
+.form{   
+    width: 100%; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+}
+
+.form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 .form input,
 .form textarea{
     border-radius: 5px;
-    border: 0;
+    border: #FF66C4;
+    outline: 0;
+    padding: 5px 10px;
 }
 
 .form input{
@@ -283,6 +293,19 @@ img {
 
 .form textarea{
     width: 80%;
+}
+
+.footer-title{
+    font-size: 36px;
+}
+
+.send-button{
+    width: 180px;
+    height: 40px;
+    /* background-color: #86895d; */
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
 }
 
 @media (min-width: 480px) {
@@ -328,5 +351,9 @@ img {
 
     .cola-novia .art-info-container{
         padding: 0 20px;
+    }
+
+    .footer .container{
+        width: 500px;
     }
 }
