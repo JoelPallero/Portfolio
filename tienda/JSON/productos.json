@@ -52,6 +52,7 @@
           "largo": "20cm",
           "ancho": "17cm"
         },
+        "color": "a elección",
         "description": "",
         "price": "A consultar"
       },
@@ -62,6 +63,7 @@
         "medidas": {
           "diámetro": "40cm"
         },
+        "color": "a elección",
         "description": "",
         "price": "A consultar"
       }
@@ -70,6 +72,7 @@
       {
         "name": "Botonier",
         "img": "",
+        "color": "a elección",
         "description": "",
         "price": "A consultar"
       }
@@ -78,6 +81,7 @@
       {
         "name": "Bouquete para torta",
         "img": "",
+        "color": "a elección",
         "description": "",
         "price": "A consultar"
       }
@@ -86,6 +90,7 @@
       {
         "name": "Cola de novia",
         "img": "",
+        "color": "a elección",
         "description": "Se alquila o se hacen colas a medida. Consultar precios para ambos casos",
         "price": "A consultar"
       }
@@ -94,6 +99,7 @@
       {
         "name": "Pulseras para dama de honor",
         "img": "",
+        "color": "a elección",
         "description": "",
         "price": "A consultar"
       }
