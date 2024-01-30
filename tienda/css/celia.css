@@ -243,6 +243,11 @@ img {
 
 .art-title{
     font-weight: 500;
+    color: #212121;
+}
+
+.art-info{
+    color: #212121;
 }
 
 .product-link{
@@ -383,3 +388,9 @@ img {
     }
 }
 
+
+@media (min-width: 972px) {
+    .container{
+        width: 972px;
+    }
+}
