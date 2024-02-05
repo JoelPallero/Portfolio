@@ -1,28 +1,75 @@
 (function () {    
-    async function getProducts(urlJson, category){
+    async function getProducts(urlProduct, urlDescriptionProduct,category){
 
         try {
-            const response = await fetch(urlJson);
+            const responseP = await fetch(urlProduct);
+            const responseDp = await fetch(urlDescriptionProduct);
 
-            if (!response.ok) {
-                throw new Error(`Error al realizar la solicitud. Código HTTP: ${response.status}` + error.message);
+            if (!responseP.ok) {
+                throw new Error(`Error al realizar la solicitud. Código HTTP: ${responseP.status}` + error.message);
             }
 
-            const products = await response.json();
-            createProductElement(products, category);
+            if (!responseDp.ok) {
+                throw new Error(`Error al realizar la solicitud. Código HTTP: ${responseDp.status}` + error.message);
+            }
+
+            const products = await responseP.json();
+            const description = await responseDp.json();
+            createProductElement(products, description, category);
         }
         catch (error) {
             console.error('Error al realizar la solicitud:', error.message);
         }
     }
 
-    function createProductElement(products, category) {
+    function createProductElement(products, description, category) {
+        
+        //get the main section to append every element created here.
+        const mainSection = document.querySelector('.main-section');
+        
+        if(description.hasOwnProperty(category)){
+            const dataDescription = description[category];
+            const descriptionSubtitle =  document.createElement('h2');
+            descriptionSubtitle.classList.add('product-title');
+            const descriptionPar =  document.createElement('p');
+            descriptionPar.classList.add('product-description');
+            
+            descriptionPar.innerHTML = dataDescription;
+
+            switch(category){
+                case 'headdresses':
+                    descriptionSubtitle.innerText = 'Tocados';
+                    break;
+                case 'bridal-bouquet':
+                    descriptionSubtitle.innerText = 'Ramo de novia';
+                    break;
+                case 'ring-holder':
+                    descriptionSubtitle.innerText = 'Porta Anillos';
+                    break;
+                case 'botonier':
+                    descriptionSubtitle.innerText = 'Botonier';
+                    break;
+                case 'cake-bouquet':
+                    descriptionSubtitle.innerText = 'Bouquete para Torta';
+                    break;
+                case 'bridal-tail':
+                    descriptionSubtitle.innerText = 'Cola de Novia';
+                    break;
+                case 'bracelets':
+                    descriptionSubtitle.innerText = 'Pulseras';
+                    break;
+            }
+            
+
+            mainSection.appendChild(descriptionSubtitle);
+            mainSection.appendChild(descriptionPar);
+
+        }
+
         if (products.hasOwnProperty(category)) {
             //get the category of the products
             const datacategory = products[category];
             
-            //get the main section to append every element created here.
-            const mainSection = document.querySelector('.main-section');
 
             datacategory.forEach(product => {
                 //container element of every product
@@ -143,9 +190,10 @@
         //category to search it at the json file
         const category = urlParams.get('id');
         //Json local Path
-        const urlJson = '/tienda/JSON/products.json';
+        const urlProduct = '/tienda/JSON/products.json';
+        const urlDescriptionProduct = '/tienda/JSON/productDescription.json';
         
-        getProducts(urlJson, category);
+        getProducts(urlProduct, urlDescriptionProduct, category);
 
     });
 

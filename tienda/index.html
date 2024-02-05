@@ -6,8 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    
+    <!-- PreFetch -->
+    <link rel="prefetch" href="/tienda/products/product.html" as="document">
+    
+    <!-- Preload -->
+    <!-- fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- local css -->
+    <link rel="preload" href="../tienda/css/celia.css" as="style">
     <link rel="stylesheet" href="../tienda/css/celia.css">
-    <link rel="stylesheet" href="../tienda/css/normalize.css">
+
+    <!-- normalize -->
+    <link rel="preload" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" as="style">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <!-- favicon -->
+    <link rel="preload" href="../tienda/img/favicon.png" as="image">
     <link rel="shortcut icon" href="../tienda/img/favicon.png" type="image/x-icon">
 
 
@@ -160,7 +177,6 @@
     
     <script src="../tienda/js/index.js"></script>
     <script src="../tienda/js/components/contactFormScript.js"></script>
-    <script src="../tienda/js/components/sliderManager.js"></script>
 
 </body>
 

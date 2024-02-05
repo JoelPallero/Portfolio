@@ -1,13 +1,5 @@
 /*
 ===============
-Fonts
-===============
-*/
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
-
-
-/*
-===============
 Variables
 ===============
 */
@@ -135,7 +127,7 @@ img {
     width: 360px;
     height: auto;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,6 +201,16 @@ img {
     gap: 20px;
 }
 
+.product-title{
+    font-weight: 500;
+    text-align: center;
+}
+
+.product-description{
+    width: 100%;
+    padding: 0 20px 20px;
+}
+
 .article-link {
     text-decoration: none;
     color: var();
@@ -236,7 +238,7 @@ img {
 
 .product-img {
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
     border-radius: 3px;
 }
 
@@ -439,7 +441,7 @@ img {
     }
 
     .cola-novia .product-img {
-        max-width: 400px;
+        max-width: 350px;
     }
 
     .product-link {
@@ -458,5 +460,8 @@ img {
 @media (min-width: 972px) {
     .container {
         width: 972px;
+    }
+    .cola-novia .product-img {
+        max-width: 400px;
     }
 }
