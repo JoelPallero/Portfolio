@@ -5,103 +5,111 @@
         "model": "Corona",
         "img": "/tienda/img/corona1.jpg",
         "description": "",
-        "color": "a elección",
-        "price": "A consultar"
+        "color": "A elección",
+        "price": "consultar"
       },
       {
         "name": "Tocado",
         "model": "Media corona",
         "img": "",
         "description": "",
-        "color": "a elección",
-        "price": "A consultar"
+        "color": "A elección",
+        "price": "consultar"
       },
       {
         "name": "Tocado",
         "model": "Aplique",
         "img": "/tienda/img/aplique1.jpg",
         "description": "",
-        "color": "a elección",
-        "price": "A consultar"
+        "color": "A elección",
+        "price": "consultar"
+      },
+      {
+        "name": "Tocado",
+        "model": "Peineta",
+        "img": "/tienda/img/peineta.jpg",
+        "description": "",
+        "color": "A elección",
+        "price": "consultar"
       }
     ],
     "bridal-bouquet": [
       {
         "name": "Ramos",
         "model": "Tela",
-        "img": "",
+        "img": "/tienda/img/ramo-foami.jpg",
         "description": "",
-        "color": "a elección",
-        "price": "A consultar"
+        "color": "A elección",
+        "price": "consultar"
       },
       {
         "name": "Ramos",
         "model": "Foami",
-        "img": "",
+        "img": "/tienda/img/ramo-tela.jpg",
         "description": "",
-        "color": "a elección",
-        "price": "A consultar"
+        "color": "A elección",
+        "price": "consultar"
       }
     ],
     "ring-holder": [
       {
         "name": "Porta anillos para bodas",
         "model": "Canasta",
-        "img": "",
+        "img": "/tienda/img/porta-canasta.jpg",
         "medidas": {
           "largo": "20cm",
           "ancho": "17cm"
         },
-        "color": "a elección",
+        "color": "A elección",
         "description": "",
-        "price": "A consultar"
+        "price": "consultar"
       },
       {
         "name": "Porta anillos para bodas",
         "model": "Almohadilla",
-        "img": "",
+        "img": "/tienda/img/porta-almohadilla.jpg",
         "medidas": {
           "diámetro": "40cm"
         },
-        "color": "a elección",
+        "color": "A elección",
         "description": "",
-        "price": "A consultar"
+        "price": "consultar"
       }
     ],
     "botonier": [
       {
         "name": "Botonier",
-        "img": "",
-        "color": "a elección",
+        "img": "/tienda/img/botonier.jpg",
+        "color": "A elección",
         "description": "",
-        "price": "A consultar"
+        "price": "consultar"
       }
     ],
     "cake-bouquet": [
       {
         "name": "Bouquete para torta",
-        "img": "",
-        "color": "a elección",
+        "img": "/tienda/img/boquete-torta,jpg",
+        "color": "A elección",
         "description": "",
-        "price": "A consultar"
+        "price": "consultar"
       }
     ],
     "bridal-tail": [
       {
         "name": "Cola de novia",
         "img": "",
-        "color": "a elección",
+        "color": "A elección",
         "description": "Se alquila o se hacen colas a medida. Consultar precios para ambos casos",
-        "price": "A consultar"
+        "price": "consultar"
       }
     ],
     "bracelets": [
       {
         "name": "Pulseras para dama de honor",
         "img": "",
-        "color": "a elección",
+        "color": "A elección",
         "description": "",
-        "price": "A consultar"
+        "price": "consultar"
       }
     ]
   }

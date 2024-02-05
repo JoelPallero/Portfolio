@@ -11,7 +11,7 @@
                 // Verificar si se encontró el ID del artículo
                 if (idArticle) {
                     // Redirigir a la nueva URL con el ID
-                    window.location.href = `/tienda/productos/producto.html?id=${idArticle}`;
+                    window.location.href = `/tienda/products/product.html?id=${idArticle}`;
                 } else {
                     console.error('No se pudo obtener el ID del artículo');
                 }

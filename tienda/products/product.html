@@ -13,7 +13,7 @@
     <title>Celia Tocados</title>
 </head>
 
-<body class="" id="producto-page">
+<body id="product-page">
     
     <header class="header">
         <div class="header-container">
@@ -37,27 +37,27 @@
 
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <section class="form-container">
-                <h2 class="footer-title">Contacto</h2>
-                <form action="" class="form">
-                    <input type="text" name="name" id="">
-                    <input type="email" name="email" id="">
-                    <textarea name="message" id="" cols="20" rows="10"></textarea>
-                    <button type="submit" class="send-button">Enviar</button>
-                </form>
-            </section>
+    <footer class="footer">        
+        <div class="form-container">
+            <h2 class="footer-title">Contacto</h2>
+            <form action="" class="form" id="contact-form">
+                <input type="text" name="name" id="" placeholder="Nombre">
+                <input type="number" name="tel" id="" minlength="10" maxlength="16" placeholder="Teléfono">
+                <input type="email" name="email" id="" placeholder="Email">
+                <textarea name="message" id="" cols="20" rows="10" placeholder="Mensaje"></textarea>
+                <button type="submit" class="send-button" id="send-button">Enviar</button>
+            </form>
         </div>
     </footer>
 
 
-    <script src="/tienda/js/productos.js">
+    <script src="/tienda/js/productsManager.js">
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         const idArticle = urlParams.get('id');
     </script>
     <script src="/tienda/js/index.js"></script>
+    <script src="/tienda/js/components/contactFormScript.js"></script>
 
 </body>
 
