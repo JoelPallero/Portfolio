@@ -467,7 +467,6 @@ img {
 .c-technology {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
 .tech-icons {
