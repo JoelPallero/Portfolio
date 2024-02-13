@@ -54,21 +54,18 @@
         <div class="form-container">
             <h2 class="footer-title">Contacto</h2>
             <form action="" class="form" id="contact-form">
-                <input type="text" name="name" id="" placeholder="Nombre">
-                <input type="number" name="tel" id="" minlength="10" maxlength="16" placeholder="Teléfono">
-                <input type="email" name="email" id="" placeholder="Email">
+                <input required type="text" name="name" id="" placeholder="Nombre">
+                <input required type="number" name="tel" id="" minlength="10" maxlength="16" placeholder="Teléfono">
+                <input required type="email" name="email" id="" placeholder="Email">
                 <textarea name="message" id="" cols="20" rows="10" placeholder="Mensaje"></textarea>
+                
                 <button type="submit" class="send-button" id="send-button">Enviar</button>
             </form>
         </div>
     </footer>
 
 
-    <script src="/tienda/js/productsManager.js">
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const idArticle = urlParams.get('id');
-    </script>
+    <script src="/tienda/js/productsManager.js"></script>
     <script src="/tienda/js/index.js"></script>
     <script src="/tienda/js/components/contactFormScript.js"></script>
 

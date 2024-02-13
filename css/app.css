@@ -448,24 +448,8 @@ img {
 .client-web-img {
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 30px;
-    left: 30px;
     border-radius: 10px;
-    transition: all 0.3s ease-in-out, left 0.3s ease-in-out;
 }
-
-.client-web:hover {
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-}
-
-.client-web:hover .client-web-img {
-    top: 0;
-    left: 0;
-}
-
 
 .client-info {
     display: flex;
@@ -483,10 +467,15 @@ img {
 .c-technology {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .tech-icons {
     width: 40px;
+}
+
+.woocommerce_logo{
+    width: 50px;
 }
 
 .c-tech-used {
@@ -950,6 +939,23 @@ textarea:user-invalid {
     .client-web{
         width: 350px;
         height: 240px;
+    }
+
+    .client-web-img {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        transition: top 0.3s ease-in-out, left 0.3s ease-in-out;
+    }
+    .client-web:hover {
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    }
+    
+    .client-web:hover .client-web-img {
+        top: 0;
+        left: 0;
     }
 
     .job-info{
