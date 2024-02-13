@@ -24,7 +24,9 @@ Variables
     --color-subtitle: #212121;
     --par-color: #575757;
     --parr-btn-color: #dddddd;
+    --btn-client-color: #dddddd;
     --color-link: #212121;
+    --tablets-color: #ffffff;
 
     /* social icons */
     --gh-color: #83319c;
@@ -39,6 +41,7 @@ Variables
     --bg-header-color: #a2b3fff1;
     --br-btn-color: #0a072e;
     --br-card-color: #212121;
+    --bg-form: #ffffff;
 
     /* border color */
     --border-color: #cacaca;
@@ -158,6 +161,7 @@ img {
     --experience-color: #dddddd;
     --par-color: #aaaaaa;
     --parr-btn-color: #aaaaaa;
+    --btn-client-color: #ffffff;
     --color-link: #ffffff;
     --title-gray: #cacaca;
     --color-subtitle: #dddddd;
@@ -166,6 +170,7 @@ img {
     --br-btn-color: var(--bg-chevron-color);
     --br-card-color: #808080;
     --bg-dwld-color: var(--bg-chevron-color);
+    --bg-form: #dddddd;
 
     /* border color */
     --border-color: #3b3b3b;
@@ -488,7 +493,7 @@ img {
     width: 140px;
     height: 40px;
     background-color: var(--br-btn-color);
-    color: var(--parr-btn-color);
+    color: var(--btn-client-color);
     padding: 5px 20px;
     display: flex;
     justify-content: center;
@@ -597,7 +602,8 @@ img {
 
 .lenguage__tablet{
     background-color: #53616d;
-    color: var(--bg-pry);
+    font-weight: normal;
+    color: var(--tablets-color);
     border-radius: 5px;
     padding: 2px 7px;
 }
@@ -678,6 +684,9 @@ img {
     cursor: pointer;
     border: none;
     transition: all .1s ease-in-out;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 20px 0;
 }
 
 .reset__button:hover {
@@ -824,6 +833,7 @@ img {
         padding: 10px;
         border-radius: 5px;
         font-size: 16px;
+        background-color: var(--bg-form);
     }
 
     input:active,
