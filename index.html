@@ -21,7 +21,11 @@
         <section class="skin">
             <div class="logo" id="logo">
                 <a href="/" class="logo-img-container">
-                    <img loading="lazy" src="/img/profile-3.png" alt="profile photo" class="logo-img">
+                    <picture>
+                        <source srcset="img/profile-3.webp" type="image/webp">
+                        <source srcset="/img/profile-3.png" type="image/png">
+                        <img loading="lazy" src="/img/profile-3.png" alt="profile photo" class="logo-img">
+                    </picture>                    
                 </a>
                 <div class="caps">
                     <a target="_blank" href="https://www.linkedin.com/in/joel-pallero/" class="sphere-link profile-links linkedin">
@@ -47,7 +51,11 @@
         <!-- Who am i -->
         <section class="profile">
             <div class="profile-photo">
-                <img loading="lazy" src="/img/profile-3.png" alt="profile photo" class="joel-photo">
+                <picture>
+                    <source srcset="img/profile-3.webp" type="image/webp">
+                    <source srcset="/img/profile-3.png" type="image/png">
+                    <img loading="lazy" src="/img/profile-3.png" alt="profile photo" class="joel-photo">
+                </picture>
             </div>
             <div class="introduction">
                 <h2 class="title">Joel Pallero</h2>
@@ -83,7 +91,11 @@
                 <div class="job-info">
                     <div class="client-web">
                         <a target="_blank" href="https://hacer.com.ar" class="link-img">
-                            <img loading="lazy" src="/img/hacer-web.png" alt="Hacer web" class="client-web-img">
+                            <picture>
+                                <source srcset="/img/hacer-web.webp" type="image/webp">
+                                <source srcset="/img/hacer-web.png" type="image/png">
+                                <img loading="lazy" src="/img/hacer-web.png" alt="Hacer web" class="client-web-img">
+                            </picture>
                         </a>
                     </div>
                     <div class="client-info">
@@ -108,7 +120,11 @@
                 <div class="job-info">
                     <div class="client-web">
                         <a target="_blank" href="https://misionescitaconlavida.com.ar" class="link-img">
-                            <img loading="lazy" src="/img/misiones-web.png" alt="Misiones web" class="client-web-img">
+                            <picture>
+                                <source srcset="/img/misiones-web.webp" type="image/webp">
+                                <source srcset="/img/misiones-web.png" type="image/png">
+                                <img loading="lazy" src="/img/misiones-web.png" alt="Misiones web" class="client-web-img">
+                            </picture>
                         </a>
                     </div>
                     <div class="client-info">
@@ -133,7 +149,11 @@
                 <div class="job-info">
                     <div class="client-web">
                         <a target="_blank" href="https://gamax.com.ar" class="link-img">
-                            <img loading="lazy" src="/img/gamax-web.png" alt="Gamax web" class="client-web-img">
+                            <picture>
+                                <source srcset="/img/gamax-web.webp" type="image/webp">
+                                <source srcset="/img/gamax-web.png" type="image/png">
+                                <img loading="lazy" src="/img/gamax-web.png" alt="Gamax web" class="client-web-img">
+                            </picture>
                         </a>
                     </div>
                     <div class="client-info">
@@ -159,7 +179,11 @@
                 <div class="job-info">
                     <div class="client-web">
                         <a target="_blank" href="https://fundacionesperanza.com.ar" class="link-img">
-                            <img loading="lazy" src="/img/fe-web.png" alt="Fundacion Esperanza web" class="client-web-img">
+                            <picture>
+                                <source srcset="/img/fe-web.webp" type="image/webp">
+                                <source srcset="/img/fe-web.png" type="image/png">
+                                <img loading="lazy" src="/img/fe-web.png" alt="Fundacion Esperanza web" class="client-web-img">
+                            </picture>
                         </a>
                     </div>
                     <div class="client-info">
@@ -185,7 +209,11 @@
                 <div class="job-info">
                     <div class="client-web">
                         <a target="_blank" href="https://maranathaargentina.com" class="link-img">
-                            <img loading="lazy" src="/img/maranatha-web.png" alt="Fundacion Esperanza web" class="client-web-img">
+                            <picture>
+                                <source srcset="/img/maranatha-web.webp" type="image/webp">
+                                <source srcset="/img/maranatha-web.png" type="image/png">
+                                <img loading="lazy" src="/img/maranatha-web.png" alt="Maranatha web" class="client-web-img">
+                            </picture>
                         </a>
                     </div>
                     <div class="client-info">
@@ -444,6 +472,7 @@
     </footer>
 
     <!-- scripts -->
+    <script src="js/modernizr.js"></script>
     <script src="/js/questions.js"></script>
     <script src="/js/memory-game.js"></script>
     <script src="/js/header.js"></script>
