@@ -271,6 +271,14 @@ img {
     fill: #dddddd;
 }
 
+.site-title h2{
+    color: #212121;
+}
+
+.dark-mode .site-title h2{
+    color: var(--experience-color);
+}
+
 /* Profile introductioon */
 
 .profile{
@@ -508,8 +516,19 @@ img {
     font-size: 16px;
 }
 
-.svg-link {
+.svg-link,
+.load-port-brief {
     width: 25px;
+}
+
+.load-port{
+    width: 260px;
+    font-size: 18px;
+    margin-top: 2rem;
+}
+
+.load-port-brief svg{
+    fill: #285fd4 !important;
 }
 
 /* questions */
