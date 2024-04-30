@@ -193,7 +193,7 @@ img {
 .header {
     position: fixed;
     width: 100%;
-    height: 55px;
+    height: 60px;
     background-color: var(--bg-pry);
     opacity: .96;
     top: 0;
@@ -383,12 +383,6 @@ img {
 /* Job Experience */
 
 .experience{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
     padding: 0 20px;
     box-sizing: border-box;
 }
@@ -404,6 +398,16 @@ img {
     border-radius: 10px;
     box-sizing: border-box;
     padding: 20px 0;
+}
+
+.experience,
+.experience-child{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .experience,
@@ -489,6 +493,10 @@ img {
 
 .tech-icons {
     width: 40px;
+}
+
+.ms {
+    min-width: 160px;
 }
 
 .woocommerce_logo{
@@ -740,7 +748,7 @@ img {
 .front {
     border: none;
     background-color: var(--br-card-color);
-    background-image: url(/img/logo.png);
+    background-image: url(../img/logo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -907,7 +915,6 @@ textarea:user-invalid {
     display: block;
 }
 
-
 /* Media Queries */
 
 
@@ -1039,5 +1046,4 @@ textarea:user-invalid {
         width: 120px;
         height: 150px;
     }
-
 }
