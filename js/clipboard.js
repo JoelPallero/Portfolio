@@ -1,4 +1,5 @@
 (function() {
+    
     document.addEventListener('DOMContentLoaded', function() {
         // Seleccionar elementos
         const copyButtonTop = document.getElementById('copy-mail-top');
@@ -41,6 +42,5 @@
         if (copyButton) {
             copyButton.addEventListener('click', () => copyToClipboard(copyButton));
         }
-    });
-    
+    });   
 })();
