@@ -246,6 +246,22 @@ img {
     }
 }
 
+.language-switcher{
+    width: 36px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    top: 18px;
+    right: 90px;
+    cursor: pointer;
+}
+
+.language-switcher button{
+    padding: 2px 2px;
+}
+
 .bg-mode {
     width: 36px;
     display: flex;

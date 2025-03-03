@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-ABCDEFGH');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,9 +40,17 @@
 
     <title>Joel Pallero - Wordpress Developer</title>
 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'es'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      
+
 </head>
 
-<body class="container">
+<body id="google_translate_element" class="container">
     <!-- header -->
     <header class="header container">
         <section class="skin">
@@ -58,10 +75,18 @@
                     </a>
                 </div>
             </div>
+
+            
+            <div class="language-switcher">
+                <button onclick="setLanguage('en')">EN</button>
+                <button onclick="setLanguage('es')">ES</button>
+            </div>
+
             <div class="bg-mode" id="bg-mode">
+
                 <img loading="lazy" src="/img/icons/moon.svg" alt="dark mode" class="moon dark-mode-icon">
                 <img loading="lazy" src="/img/icons/sun.svg" alt="light mode" class="sun dark-mode-icon">
-            </div>
+            </div>         
         </section>
     </header>
 
@@ -459,7 +484,6 @@
         </section> 
     </main>
 
-
     <!-- Footer -->
     <footer class="footer">
         <form class="form" id="contact-form">
@@ -481,6 +505,7 @@
     <script src="/js/clipboard.js"></script>
     <script src="/js/dark-mode.js"></script>
     <script src="/js/form.js"></script>
+    <script src="/js/language.js"></script>
 </body>
 
 </html>
